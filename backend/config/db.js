@@ -1,9 +1,19 @@
 const { Sequelize } = require('sequelize');
 
-// Conecta ao banco de dados SQLite (ou você pode usar outro, como MySQL ou Postgres)
+// Configuração do banco de dados
 const sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: './database.sqlite', // Caminho do banco de dados
+  storage: './database.sqlite', // Caminho para o arquivo SQLite
 });
 
-module.exports = { sequelize };
+// Testando a conexão
+(async () => {
+  try {
+    await sequelize.authenticate();
+    console.log('Conexão com o banco de dados estabelecida com sucesso.');
+  } catch (error) {
+    console.error('Não foi possível conectar ao banco de dados:', error);
+  }
+})();
+
+module.exports = { sequelize }; // Exporte como um objeto
