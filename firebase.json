@@ -7,10 +7,12 @@
       "port": 5001
     },
     "firestore": {
-      "port": 8080
+      "port": 8082,  
+      "rules": "firestore.rules"
     },
     "database": {
-      "port": 9000
+      "port": 9002,  
+      "rules": "database.rules.json"
     },
     "tasks": {
       "port": 9499
@@ -19,5 +21,21 @@
       "enabled": true
     },
     "singleProjectMode": true
-  }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
 }
