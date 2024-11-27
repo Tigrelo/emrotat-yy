@@ -1,13 +1,15 @@
-// HomeScreen.js
 import React from 'react';
-import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, Image, StyleSheet, Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window'); // Obter a largura da tela
 
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Image
-        source={require('../assets/images/emrota.jpg')} // Certifique-se de que o caminho está correto
+        source={require('../assets/images/emrota.png')} // Certifique-se de que o caminho está correto
         style={styles.logo}
+        resizeMode="contain" // Ajusta a imagem para caber no espaço definido
       />
       <Text style={styles.text}>Bem-vindo ao seu App EMROTA!</Text>
 
@@ -42,8 +44,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'green',
   },
   logo: {
-    width: 700, // Ajuste a largura conforme necessário
-    height: 200, // Ajuste a altura conforme necessário
+    width: width * 0.8, // 80% da largura da tela
+    height: width * 0.5, // 50% da largura da tela
     marginBottom: 20,
   },
   text: {

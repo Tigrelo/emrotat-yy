@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "630b473a-7198-47bd-b6d6-d6ae6d037dcb"
+      }
+    },
+    "android": {
+      "package": "com.risola.front"
+    },
+    "splash": {
+      "image": "./assets/images/emrota.png",  
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    }
+  }
+}

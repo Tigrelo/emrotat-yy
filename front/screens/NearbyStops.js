@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, Alert } from 'react-native';
 import * as Location from 'expo-location';
-import PushNotification from 'react-native-push-notification';
+import * as Notifications from 'expo-notifications';
 
 const NearbyStops = () => {
   const [stops, setStops] = useState([]);
@@ -47,9 +47,13 @@ const NearbyStops = () => {
 
   const notifyUser = (stops) => {
     stops.forEach(stop => {
-      PushNotification.localNotification({
-        title: 'Parada Próxima',
-        message: `Você está perto da parada: ${stop.name}`,
+      // Usando expo-notifications para enviar uma notificação local
+      Notifications.scheduleNotificationAsync({
+        content: {
+          title: 'Parada Próxima',
+          body: `Você está perto da parada: ${stop.name}`,
+        },
+        trigger: { seconds: 1 }, // Notificação dispara 1 segundo após a chamada
       });
     });
   };

@@ -1,0 +1,95 @@
+[debug] [2024-11-23T18:27:19.694Z] ----------------------------------------------------------------------
+[debug] [2024-11-23T18:27:19.697Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Isaac Risola\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-11-23T18:27:19.697Z] CLI Version:   13.27.0
+[debug] [2024-11-23T18:27:19.697Z] Platform:      win32
+[debug] [2024-11-23T18:27:19.697Z] Node Version:  v20.13.1
+[debug] [2024-11-23T18:27:19.697Z] Time:          Sat Nov 23 2024 15:27:19 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2024-11-23T18:27:19.698Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-23T18:27:19.785Z] Object ".emulators.database" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[debug] [2024-11-23T18:27:19.790Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-23T18:27:19.790Z] > authorizing via signed-in user (risolametal@gmail.com)
+[debug] [2024-11-23T18:27:19.910Z] java version "22.0.1" 2024-04-16
+
+[debug] [2024-11-23T18:27:19.911Z] Java(TM) SE Runtime Environment (build 22.0.1+8-16)
+Java HotSpot(TM) 64-Bit Server VM (build 22.0.1+8-16, mixed mode, sharing)
+
+[debug] [2024-11-23T18:27:19.932Z] Parsed Java major version: 22
+[info] i  emulators: Starting emulators: auth, functions, firestore, database, tasks, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, database, tasks, extensions"}}
+[debug] [2024-11-23T18:27:19.934Z] Checked if tokens are valid: true, expires at: 1732389776331
+[debug] [2024-11-23T18:27:19.934Z] Checked if tokens are valid: true, expires at: 1732389776331
+[debug] [2024-11-23T18:27:19.935Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/emrota [none]
+[debug] [2024-11-23T18:27:20.856Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/emrota 200
+[debug] [2024-11-23T18:27:20.856Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/emrota {"projectNumber":"671793047739","projectId":"emrota","lifecycleState":"ACTIVE","name":"EMROTA","labels":{"firebase":"enabled"},"createTime":"2024-09-28T20:07:40.177221Z"}
+[debug] [2024-11-23T18:27:20.868Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-23T18:27:20.868Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-23T18:27:20.868Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-23T18:27:20.868Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-23T18:27:20.868Z] [database] Database Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-23T18:27:20.869Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8085}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9005}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-11-23T18:27:20.873Z] [hub] writing locator at C:\Users\ISAACR~1\AppData\Local\Temp\hub-emrota.json
+[debug] [2024-11-23T18:27:20.879Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2024-11-23T18:27:20.883Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-23T18:27:20.883Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-23T18:27:20.883Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-11-23T18:27:20.883Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8085}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9005}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-11-23T18:27:20.887Z] defaultcredentials: writing to file C:\Users\Isaac Risola\AppData\Roaming\firebase\risolametal_gmail_com_application_default_credentials.json
+[debug] [2024-11-23T18:27:20.888Z] Setting GAC to C:\Users\Isaac Risola\AppData\Roaming\firebase\risolametal_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Isaac Risola\\AppData\\Roaming\\firebase\\risolametal_gmail_com_application_default_credentials.json"}}
+[debug] [2024-11-23T18:27:20.889Z] Checked if tokens are valid: true, expires at: 1732389776331
+[debug] [2024-11-23T18:27:20.889Z] Checked if tokens are valid: true, expires at: 1732389776331
+[debug] [2024-11-23T18:27:20.889Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/emrota/adminSdkConfig [none]
+[debug] [2024-11-23T18:27:21.698Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/emrota/adminSdkConfig 200
+[debug] [2024-11-23T18:27:21.698Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/emrota/adminSdkConfig {"projectId":"emrota","storageBucket":"emrota.firebasestorage.app"}
+[warn] !  firestore: Cloud Firestore Emulator does not support multiple databases yet. {"metadata":{"emulator":{"name":"firestore"},"message":"Cloud Firestore Emulator does not support multiple databases yet."}}
+[warn] !  firestore: Did not find a Cloud Firestore rules file specified in a firebase.json config file. {"metadata":{"emulator":{"name":"firestore"},"message":"Did not find a Cloud Firestore rules file specified in a firebase.json config file."}}
+[warn] !  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2024-11-23T18:27:21.722Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-23T18:27:21.722Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2024-11-23T18:27:21.722Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\Isaac Risola\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8085,"--websocket_port",9150,"--project_id","emrota","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8085} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Isaac Risola\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8085,\"--websocket_port\",9150,\"--project_id\",\"emrota\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8085}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2024-11-23T18:27:23.406Z] Checked if tokens are valid: true, expires at: 1732389776331
+[debug] [2024-11-23T18:27:23.406Z] Checked if tokens are valid: true, expires at: 1732389776331
+[debug] [2024-11-23T18:27:23.406Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/emrota [none]
+[debug] [2024-11-23T18:27:23.872Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/emrota 200
+[debug] [2024-11-23T18:27:23.872Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/emrota {"projectId":"emrota","projectNumber":"671793047739","displayName":"EMROTA","name":"projects/emrota","resources":{"hostingSite":"emrota"},"state":"ACTIVE","etag":"1_f34a41c7-7e81-4d2b-a43c-6cd84e44d95f"}
+[debug] [2024-11-23T18:27:23.872Z] database rules config:  []
+[warn] !  database: Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"database"},"message":"Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2024-11-23T18:27:23.874Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2024-11-23T18:27:23.874Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-11-23T18:27:23.874Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2024-11-23T18:27:23.874Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\Isaac Risola\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.11.2.jar","--host","127.0.0.1","--port",9005,"--single_project_mode","Warning","--functions_emulator_host","127.0.0.1","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false,"shell":false,"port":9005} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Isaac Risola\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.11.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",9005,\"--single_project_mode\",\"Warning\",\"--functions_emulator_host\",\"127.0.0.1\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":9005}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2024-11-23T18:27:30.646Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "C:\Users\Isaac Risola\Desktop\EMROTA\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Isaac Risola\\Desktop\\EMROTA\\functions\" for Cloud Functions..."}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: could not deploy functions because the "functions" directory was not found. Please create it or specify a different source directory in firebase.json {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: could not deploy functions because the \u001b[1m\"functions\"\u001b[22m directory was not found. Please create it or specify a different source directory in firebase.json"}}
+[debug] [2024-11-23T18:27:30.660Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI              │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth       │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8085 │ http://127.0.0.1:4000/firestore  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Database       │ 127.0.0.1:9005 │ http://127.0.0.1:4000/database   │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Cloud Tasks    │ 127.0.0.1:9499 │ n/a                              │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions     │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
